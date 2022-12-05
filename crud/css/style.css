@@ -1,0 +1,95 @@
+:root{
+    --firstMainClr:#222;
+    --secondMainClr:#fff;
+    --thirdMinClr:#A80000 ;
+}
+body{
+    background-color: var(--firstMainClr);
+    color: var(--secondMainClr);
+}
+table {
+    background-color: transparent;
+    color:var(--secondMainClr) !important;
+}
+.form-control{
+    background-color: #111;
+    border: none;
+    outline: none;
+    color: #fff;
+    transition: .2s all ease-in;
+}
+table {
+    text-align: center;
+}
+.form-control:focus{
+    background-color:#000;
+    transform: scale(1.1);
+box-shadow: none;}
+.btn{
+    background-color: var(--thirdMinClr);
+    color:var(--secondMainClr);
+}
+.btn:hover{
+    background-color: #d30b0b;
+    border: none;
+    outline: none;
+}
+.delete-all{
+    margin: 10px 0;
+    width: 100%;
+}
+#information td{
+    color:var(--secondMainClr)
+}
+#firstName,#lastName,#adress,#phoneNumber{
+    color:var(--secondMainClr);
+}
+.alert{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: fit-content;
+}
+#ops,#ops2{
+    display: none;
+}
+.alert-primary{
+    background-color: #f8d7da !important;
+    color:#842029 !important;
+}
+/*alert*/
+.swal2-styled.swal2-confirm{
+    background-color: var(--firstMainClr);
+    color: var(--secondMainClr) !important;
+}
+.swal2-container.swal2-center>.swal2-popup{
+    background-color:var(--firstMainClr);
+    color: var(--secondMainClr);
+}
+.swal2-styled.swal2-confirm{
+    background-color: var(--thirdMinClr) !important;
+    border: none !important;
+    outline: none !important;
+}
+.mb-3 span{
+    color:red;
+    margin-left: 2px;
+}
+
+#search{
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

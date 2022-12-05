@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD System</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.all.min.js" integrity="sha512-SFaxUL267Y1wH3eelsqXwDXir/ebciCMRmmqlbwnSKhQH8hmnqIbUm8FKiYWQ+8jcnagOColZIaQuhdZYUhcPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <section class="crud mt-5" >
+      <div class="container">
+        
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name <span>*</span></label>
+        <input type="text" required id="firstName" class="form-control"id="exampleFormControlInput1"placeholder='First Name'>
+        <div class="alert alert-danger" id="ops" role="alert">
+         Be sure start with CAPITAL letter
+        </div>
+      </div>
+     
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Last Name<span>*</span></label>
+        <input id="lastName" required type="text"  class="form-control"  id="exampleFormControlInput1">
+        <div class="alert alert-primary" id="ops2" role="alert">
+          Be sure start with CAPITAL letter
+         </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">address</label>
+        <input type="text" class="form-control" id="adress" id="exampleFormControlInput1" placeholder="address">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Phone Number<span>*</span></label>
+        <input type="number" required class="form-control" id="phoneNumber" id="exampleFormControlInput1" >
+      </div>
+    <button  disabled type="submit"  id="addNew"  class="btn"><i class="fa-solid fa-plus"></i> Add New</button>
+    <button type="submit" id="clearData" class="btn">Clear Data</button>
+    <div>
+      <button type="submit" id="deleteAll" class="btn delete-all">Delete All</button>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label"></label>
+      <input type="search" class="form-control" id="search" id="exampleFormControlInput1" 
+      onkeyup="searchData(this)" placeholder="  search...">
+    </div>
+  </div>
+    </section>
+    <div class="container">
+    <table class=" table  table-striped ">
+<thead>
+  <tr>
+    <th>id</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Adress</th>
+    <th>Phone number</th>
+    <th>Action</th>
+  </tr>
+</thead>
+<tbody id="information"></tbody>
+    </table>
+  </div>
+    <!-- bootstrap 5 -->
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.all.min.js" integrity="sha512-SFaxUL267Y1wH3eelsqXwDXir/ebciCMRmmqlbwnSKhQH8hmnqIbUm8FKiYWQ+8jcnagOColZIaQuhdZYUhcPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.min.js" integrity="sha512-Z4QYNSc2DFv8LrhMEyarEP3rBkODBZT90RwUC7dYQYF29V4dfkh+8oYZHt0R6T3/KNv32/u0W6icGWUUk9V0jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
